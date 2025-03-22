@@ -36,6 +36,8 @@ const MenuPage = () => {
     fetchMenuItems();
   }, []);
 
+  console.log(menuItems)
+
   if (loading) {
     return (
       <div className="container mx-auto px-4 py-8">
@@ -50,7 +52,7 @@ const MenuPage = () => {
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-8">All Menu Items</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {menuItems.map((item) => (
           <MenuItem item={item} key={item.id} />
         ))}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCart } from "@/app/context/CartContext";
+import { useCart } from "@/app/(main)/context/CartContext";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import React from "react";
 

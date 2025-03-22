@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 const UpdateProfile = () => {
+  
   const router = useRouter();
 
   const [firstName, setFirstName] = useState("");

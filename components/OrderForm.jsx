@@ -1,6 +1,6 @@
 "use client";
-import { useAuth } from "@/app/context/AuthContext";
-import { useCart } from "@/app/context/CartContext";
+import { useAuth } from "@/app/(main)/context/AuthContext";
+import { useCart } from "@/app/(main)/context/CartContext";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 

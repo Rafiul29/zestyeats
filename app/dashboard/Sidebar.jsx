@@ -11,7 +11,7 @@ import {
   BookOpen,
   Store,
 } from "lucide-react";
-import { useAuth } from "@/app/context/AuthContext";
+import { useAuth } from "@/app/(main)/context/AuthContext";
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -33,7 +33,9 @@ export default function Sidebar() {
     >
       <div className="flex items-center justify-between h-16 px-4 border-b border-gray-700">
         <div className="flex items-center">
-          <span className="text-xl font-semibold">ZestyEats</span>
+         <Link href='/'>
+         <span className="text-xl font-semibold">ZestyEats</span>
+         </Link>
         </div>
       </div>
       <div className="flex-1 overflow-y-auto py-4">

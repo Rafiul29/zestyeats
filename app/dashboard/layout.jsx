@@ -3,7 +3,8 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Sidebar from "./Sidebar";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../(main)/context/AuthContext";
+
 
 const DashboardLayout = ({ children }) => {
   const router = useRouter();

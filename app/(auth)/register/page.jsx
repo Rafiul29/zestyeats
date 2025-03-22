@@ -59,21 +59,13 @@ const RegisterPage = () => {
     }
   };
   return (
-    <div className="flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="flex flex-col items-center justify-center min-h-svh py-12 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-black">
             Create a new account
           </h2>
-          <p className="mt-2 text-sm text-gray-500">
-            Already have an account?{" "}
-            <Link
-              href="/login"
-              className="font-medium text-black hover:text-gray-700"
-            >
-              Sign in
-            </Link>
-          </p>
+       
         </div>
 
         <div className="mt-8 bg-white py-8 px-4 shadow-md rounded-lg sm:px-10">
@@ -181,6 +173,15 @@ const RegisterPage = () => {
               </button>
             </div>
           </form>
+          <p className="mt-3 text-sm text-gray-500">
+            Already have an account?{" "}
+            <Link
+              href="/login"
+              className="font-medium text-black hover:text-gray-700"
+            >
+              Sign in
+            </Link>
+          </p>
         </div>
       </div>
     </div>

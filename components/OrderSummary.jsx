@@ -1,6 +1,6 @@
 "use client";
 
-import { useCart } from "@/app/context/CartContext";
+import { useCart } from "@/app/(main)/context/CartContext";
 import React from "react";
 import OrderForm from "./OrderForm";
 

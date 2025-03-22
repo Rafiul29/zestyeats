@@ -1,8 +1,10 @@
 "use client";
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
-import { useAuth } from "@/app/context/AuthContext";
+import { useAuth } from "@/app/(main)/context/AuthContext";
+
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
@@ -49,18 +51,13 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="flex flex-col items-center justify-center min-h-svh py-12 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900">
             Login to your account
           </h2>
-          <p className="mt-2 text-sm text-gray-600">
-            Don't have an account?{" "}
-            <a href="/register" className="font-medium text-black">
-              Create an account
-            </a>
-          </p>
+          
         </div>
 
         <div className="mt-8 bg-white py-8 px-4 shadow-md rounded-lg sm:px-10">
@@ -116,6 +113,12 @@ const LoginPage = () => {
               </button>
             </div>
           </form>
+          <p className="mt-2 text-sm text-gray-600">
+            Don't have an account?{" "}
+            <a href="/register" className="font-medium text-black">
+              Create an account
+            </a>
+          </p>
         </div>
       </div>
     </div>
